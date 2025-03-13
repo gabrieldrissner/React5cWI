@@ -5,18 +5,33 @@ type Props = {};
 
 export default function Menu({}: Props) {
   return (
-    <div>
-      <ul className="flex p-4">
-        <li className="p-2 hover:bg-fuchsia-950">
-          <Link href="/">Home</Link>
+    <nav className="bg-gray-800 text-white p-4 shadow-md rounded-lg">
+      <ul className="flex space-x-6 justify-center">
+        <li>
+          <Link
+            href="/"
+            className="px-4 py-2 rounded-md transition duration-300 hover:bg-gray-700"
+          >
+            Home
+          </Link>
         </li>
-        <li className="p-2 hover:bg-fuchsia-950">
-          <Link href="/cars">Cars</Link>
+        <li>
+          <Link
+            href="/cars"
+            className="px-4 py-2 rounded-md transition duration-300 hover:bg-gray-700"
+          >
+            Cars
+          </Link>
         </li>
-        <li className="p-2 hover:bg-fuchsia-950">
-          <Link href="/trucks">Trucks</Link>
+        <li>
+          <Link
+            href="/trucks"
+            className="px-4 py-2 rounded-md transition duration-300 hover:bg-gray-700"
+          >
+            Trucks
+          </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
