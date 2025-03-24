@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Car } from "../lib/types/types";
-import Image from "next/image";  // Image optimization import
+import Image from "next/image";  // Image-Komponente von Next.js importieren
 
 type CarListProps = {
     cars: Car[];
@@ -23,15 +23,16 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                             : "border-gray-300 bg-white"
                     }`}
                 >
-                    {/* Image component from Next.js with optimization */}
+                    {/* Image-Komponente von Next.js für optimierte Bilder */}
                     <Image
-                        src={car.image}
-                        alt={car.name}
-                        width={300}  // Adjust width based on your design needs
-                        height={200} // Adjust height based on your design needs
+                        src={car.image}  // Bildquelle
+                        alt={car.name}  // Alt-Text für das Bild
+                        width={300}  // Bildbreite
+                        height={200} // Bildhöhe
                         className="w-full h-48 object-cover rounded-lg mb-4"
                     />
-                    <h2 className="text-xl font-semibold mb-2">{car.name}</h2>
+                    {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
+                    <h2 className="text-xl font-semibold mb-2">{car.name}</h2>  {/* Überschrift für den Car-Namen */}
                     <p className="text-gray-600">Type: {car.type}</p>
                     <p className="text-gray-600">Color: {car.color}</p>
                     <p className="text-gray-600">HP: {car.motor.hp}</p>
