@@ -31,7 +31,6 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                         height={200} // Bildhöhe
                         className="w-full h-48 object-cover rounded-lg mb-4"
                     />
-                    {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
                     <h2 className="text-xl font-semibold mb-2">{car.name}</h2>  {/* Überschrift für den Car-Namen */}
                     <p className="text-gray-600">Type: {car.type}</p>
                     <p className="text-gray-600">Color: {car.color}</p>
