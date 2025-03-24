@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Car } from "../lib/types/types";
-import Image from "next/image"; // Image optimization import
+import Image from "next/image";  // Image optimization import
 
 type CarListProps = {
     cars: Car[];
@@ -27,8 +27,8 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                     <Image
                         src={car.image}
                         alt={car.name}
-                        width={300}  // Ensure appropriate width for optimization
-                        height={200} // Ensure appropriate height for optimization
+                        width={300}  // Adjust width based on your design needs
+                        height={200} // Adjust height based on your design needs
                         className="w-full h-48 object-cover rounded-lg mb-4"
                     />
                     <h2 className="text-xl font-semibold mb-2">{car.name}</h2>
