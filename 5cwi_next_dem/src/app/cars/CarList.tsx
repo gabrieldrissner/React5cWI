@@ -23,7 +23,7 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                             : "border-gray-300 bg-white"
                     }`}
                 >
-                    {/* Image-Komponente von Next.js für optimierte Bilder */}
+                    {/* Image-Komponente von Next.js für optimierte Bilder g */}
                     <Image
                         src={car.image}  // Bildquelle
                         alt={car.name}  // Alt-Text für das Bild
