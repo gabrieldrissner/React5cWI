@@ -1,4 +1,5 @@
 import { Car } from "@/app/lib/types/types";
+import { h2 } from "framer-motion/client";
 import React, { useState } from "react";
 
 type Props = { car: Car };
@@ -13,6 +14,7 @@ export default function Card({ car }: Props) {
         >
             <h2 className="font-bold text-3xl">{car.name}</h2>
             <div>{car.color}</div>
+            <div>{car.image}</div>
             <div>{isActive ? "active" : "inactive"}</div>
         </div>
     );

@@ -4,6 +4,7 @@ export interface Motor {
 }
 
 export interface Car {
+    image: ReactNode;
     name: string;
     type: string; 
     color: string;
