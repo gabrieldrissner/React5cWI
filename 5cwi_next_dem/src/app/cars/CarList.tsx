@@ -23,12 +23,12 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                             : "border-gray-300 bg-white"
                     }`}
                 >
-                    {/* Use Image component from Next.js */}
+                    {/* Verwende Image-Komponente von Next.js */}
                     <Image
                         src={car.image}
                         alt={car.name}
-                        width={300}  // Adjust width based on image size
-                        height={200} // Adjust height based on image size
+                        width={300}  // Passe die Breite entsprechend der Bildgröße an
+                        height={200} // Passe die Höhe entsprechend der Bildgröße an
                         className="w-full h-48 object-cover rounded-lg mb-4"
                     />
                     <h2 className="text-xl font-semibold mb-2">{car.name}</h2>
