@@ -1,5 +1,4 @@
 import { Car } from "@/app/lib/types/types";
-import { h2 } from "framer-motion/client";
 import React, { useState } from "react";
 
 type Props = { car: Car };
