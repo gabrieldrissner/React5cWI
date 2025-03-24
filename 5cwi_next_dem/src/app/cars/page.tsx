@@ -57,7 +57,7 @@ const cars: Car[] = [
         image: "/images/1.jpg",
     },
     {
-        name: "Lightning Mquenn auf Wish",
+        name: "Lightning Mc Quenn auf Wish",
         type: "Ferrari",
         color: "red",
         motor: {
