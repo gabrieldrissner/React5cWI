@@ -1,8 +1,8 @@
-// Add this at the very top of the file
 "use client";
 
 import React, { useState } from "react";
 import { Car } from "../lib/types/types";
+import Image from "next/image";  // Import Image from next/image for optimization
 
 type CarListProps = {
     cars: Car[];
@@ -23,10 +23,12 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                             : "border-gray-300 bg-white"
                     }`}
                 >
-                    {/* Bild anzeigen */}
-                    <img
+                    {/* Use Image component from Next.js */}
+                    <Image
                         src={car.image}
                         alt={car.name}
+                        width={300}  // Adjust width based on image size
+                        height={200} // Adjust height based on image size
                         className="w-full h-48 object-cover rounded-lg mb-4"
                     />
                     <h2 className="text-xl font-semibold mb-2">{car.name}</h2>
