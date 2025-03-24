@@ -1,9 +1,6 @@
 import React from "react";
-import Card from "../components/cars/Card";
 import { Car } from "../lib/types/types";
 import CarList from "./CarList";
-
-type Props = {};
 
 const cars: Car[] = [
     {
@@ -53,10 +50,10 @@ const cars: Car[] = [
     },
 ];
 
-export default function Cars({}: Props) {
+export default function Cars() {
     return (
         <div>
-          <CarList cars={cars}/>
+            <CarList cars={cars} />
         </div>
     );
 }
