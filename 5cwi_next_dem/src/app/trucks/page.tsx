@@ -9,7 +9,7 @@ export default function Trucks() {
                 <div className="relative px-12 py-8 bg-black rounded-lg leading-none flex items-center">
                     <div className="space-y-4">
                         <h2 className="text-white text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-purple-400 to-orange-400 animate-gradient bg-[size:400%]">
-                            Gabe steht auf Tiere
+                            Sam steht auf Tiere
                         </h2>
                     </div>
                 </div>
