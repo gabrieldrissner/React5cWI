@@ -37,6 +37,15 @@ export default function Menu() {
             Lernspiel
           </Link>
         </li>
+
+        <li>
+          <Link
+            href="/gayb"
+            className="px-4 py-2 rounded-md transition duration-300 hover:bg-gray-700"
+          >
+            gayb
+          </Link>
+        </li>
       </ul>
     </nav>
   );
