@@ -1,4 +1,3 @@
-// Add this at the very top of your file
 "use client";
 
 import React, { useState, useEffect } from "react";

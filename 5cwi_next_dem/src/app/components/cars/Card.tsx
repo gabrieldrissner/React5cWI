@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Car } from "@/app/lib/types/types";
-import Image from "next/image"; // Import Image from next/image for optimization
+import Image from "next/image"; 
 
 type Props = { car: Car };
 
@@ -14,7 +14,7 @@ export default function Card({ car }: Props) {
             }`}
             onClick={() => setIsActive(!isActive)}
         >
-            {/* Ensure the Image component is used here */}
+            {}
             <Image
                 src={car.image} 
                 alt={car.name} 
