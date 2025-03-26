@@ -1,3 +1,5 @@
+import React, { ReactNode } from "react";
+
 export interface Motor {
     serialNumber: number;
     hp: number;
@@ -10,4 +12,3 @@ export interface Car {
     color: string;
     motor: Motor; 
 }
-

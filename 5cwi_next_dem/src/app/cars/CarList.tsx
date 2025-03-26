@@ -25,7 +25,7 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
                 >
                     {/* Image-Komponente von Next.js für optimierte Bilder g */}
                     <Image
-                        src={car.image}  // Bildquelle
+                        src={typeof car.image === "string" ? car.image : "/placeholder.png"}  // Bildquelle mit Fallback
                         alt={car.name}  // Alt-Text für das Bild
                         width={300}  // Bildbreite
                         height={200} // Bildhöhe
