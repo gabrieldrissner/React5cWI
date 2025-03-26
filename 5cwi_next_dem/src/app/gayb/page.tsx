@@ -44,7 +44,7 @@ export default function Trucks() {
                 onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.1)"}
                 onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
             >
-                Sam stinkt
+                Zensur
             </button>
             <style>{`
                 .screen-flash {
