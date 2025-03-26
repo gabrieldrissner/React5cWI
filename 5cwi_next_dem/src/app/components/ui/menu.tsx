@@ -43,7 +43,7 @@ export default function Menu() {
             href="/gayb"
             className="px-4 py-2 rounded-md transition duration-300 hover:bg-gray-700"
           >
-            gayb
+            gabe
           </Link>
         </li>
       </ul>
